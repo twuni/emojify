@@ -1,0 +1,31 @@
+{
+  "name": "@twuni/emojify",
+  "version": "1.0.1",
+  "description": "Convert emoji colon syntax in a string to raw emoji.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twuni/emojify.git"
+  },
+  "author": {
+    "email": "devin@canterberry.cc",
+    "name": "Devin Canterberry"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "babel --minified --compact true --out-dir lib src/**/index.js",
+    "lint": "eslint src",
+    "test": "nyc --silent --check-coverage --branches 100 --lines 100 --functions 100 --statements 100 mocha --require @babel/register src/**/spec.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.10.1",
+    "@babel/core": "7.10.2",
+    "@babel/preset-env": "7.10.2",
+    "@babel/register": "7.10.1",
+    "babel-eslint": "^10.1.0",
+    "chai": "4.2.0",
+    "eslint": "^7.2.0",
+    "eslint-plugin-ante": "^1.0.4",
+    "mocha": "8.0.1",
+    "nyc": "15.1.0"
+  }
+}
