@@ -16,6 +16,13 @@ npm install @twuni/emojify
 yarn add @twuni/emojify
 ```
 
+Install the types package if you're using TypeScript.
+
+```sh
+npm install -D @types/twuni__emojify
+# yarn add -D @types/twuni__emojify
+```
+
 ## Usage
 
 Importing via ES6/TypeScript modules:
